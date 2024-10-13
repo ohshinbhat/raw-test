@@ -23,6 +23,12 @@ const App = () => {
 
         {/* Sign-in route */}
         <Route path="/signin" element={<SignIn />} />
+
+        {/* Catch-all route for www.rawket.in */}
+        <Route
+          path="www.rawket.in/*"
+          element={<Navigate to="/riturao/videos/vid232/view" replace />}
+        />
       </Routes>
     </Router>
   );
