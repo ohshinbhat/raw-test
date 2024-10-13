@@ -19,9 +19,10 @@ const App = () => {
         />
 
         {/* Video view route */}
-        <Route path="/riturao/videos/vid232/view" element={<SignIn />} />
+        <Route path="/riturao/videos/vid232/view" element={<VideoView />} />
 
         {/* Sign-in route */}
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </Router>
   );
